@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--Jeremy Orr-->
+<!--VFW 1209-->
+<!--Project: web app part 1-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Construction project planning app." />
+		<meta name="keywords" content="construction, mobile planning, project planning" />
+		<meta name="robots" content="index, follow" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<title>Construction Project Planner</title>
+	</head>
+	<body>
+		<h1>Construction Project Planner</h1>
+		<form action="#" method="post">
+			<fieldset>
+				<legend>Project Details</legend>
+					<ul>
+						<li>
+							<label for="constructionType">Construction Type:</label>
+							<select id="constructionType">
+								<option>Commercial</option>
+								<option>Multi-Family Residential</option>
+								<option>Private Residence</option>
+							</select>
+						</li>
+						<li>
+							<label for="projectName">Project Name:</label>
+							<input type="text" id="projectName" />
+						</li>
+						<li>
+							<label>Project Budget:</label>
+							<input type="range" min="0" max="10000"/>
+						</li>
+						<li>
+							<label for="projectLocation">Project Location:</label></br>
+							<input type="checkbox" name="Interior" value="Interior" id="projectLocation"/>Interior</br>
+							<input type="checkbox" name="Exterior" value="Exterior" id="projectLocation"/>Exterior
+						</li>
+						<li>
+							<label for="date">Start Date:</label></br>
+							<input type="date" id="date">
+						</li>
+						<li>
+							<label for="AdditionalNotes">Additional Notes:</label></br>
+							<textarea height="100px" width="320px" id="AdditionalNotes"/>
+							</textarea>
+						</li>
+						<li>
+							<label for="submit">Submit Project:</label></br>
+							<input type="submit" value="Submit Project" id="submit"/>
+							<input type="hidden" name="Country" value="USA"/>
+						</li>
+					</ul>
+			</fieldset>
+		</form>
+	</body>
+	<footer>
+		<nav>
+			<a href="#">Clear Data</a> / 
+			<a href="#">Display Data</a>
+		</nav>
+	</footer>
+</html>
